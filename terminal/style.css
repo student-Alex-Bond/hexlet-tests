@@ -1,0 +1,55 @@
+
+.terminal {
+    padding: 20px 30px;
+
+    color: #fff;
+
+    background: #263238;
+    border-radius: 5px;
+}
+
+.terminal-header {
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+}
+
+.btn-red {
+    background: #ff5f56;
+}
+
+.btn-yellow {
+    background: #ffbd2e;
+}
+
+.btn-green {
+    background: #27c93f;
+}
+
+.terminal-body pre {
+    margin: 0;
+}
+
+.terminal-body code {
+    font: 18px/1.5 "JetBrains Mono", monospace;
+}
+
+.code-tag {
+    color: #ff5370;
+}
+
+.code-attr {
+    color: #ffcb6b;
+}
+
+.code-string {
+    color: #c3e88d;
+}
