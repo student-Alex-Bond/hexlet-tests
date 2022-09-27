@@ -1,0 +1,129 @@
+:root {
+    --light: #fafafa;
+    --red: #e53935;
+    --green: #4caf50;
+    --blue: #2196f3;
+}
+
+html {
+    color: #333;
+    font: 18px/1.5 sans-serif;
+
+    background-color: var(--light);
+}
+
+body {
+    margin: 0;
+    padding: 50px 0;
+    height: 573px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 5px 0 0;
+}
+
+/* BEGIN (write your solution here) */
+.histogram-header-blue,
+.histogram-header-red,
+.histogram-header-green {
+    position: relative;
+    padding: 0;
+}
+.histogram-header-blue::before,
+.histogram-header-red::before,
+.histogram-header-green::before {
+    position: absolute;
+    content: '';
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--blue);
+}
+.histogram-header-red::before {
+    background-color: var(--red);
+}
+.histogram-header-green::before {
+    background-color: var(--green);
+}
+.histogram{
+    margin: 0 auto;
+    text-align: center;
+}
+.histogram-header{
+    display: flex;
+    justify-content: center;
+}
+tbody {
+    position: relative;
+    display: flex;
+    padding-top: 50px;
+}
+
+.histogram-row {
+    position: relative;
+    display: flex;
+    min-height: 400px;
+
+}
+.histogram-row:nth-child(1){
+    position: absolute;
+    top:49px;
+    left:-248px;
+}
+.histogram-row:nth-child(2){
+    position: absolute;
+    top: 49px;
+    left: 145px;
+}
+.histogram-row:nth-child(3){
+    position: absolute;
+    top: 49px;
+    left: 537px;
+}
+.histogram-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px 10px;
+}
+.histogram-blue {
+    display: block;
+    background-color: var(--blue);
+}
+.histogram-red {
+    background-color: var(--red);
+}
+.histogram-green {
+    background-color: var(--green);
+}
+.histogram-name{
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* END */
+
+.w-50px {
+    width: 50px;
+}
+
+.mt-50px {
+    margin-top: 50px;
+}
+
+.px-20 {
+    padding-right: 19px;
+    padding-left: 19px;
+}
